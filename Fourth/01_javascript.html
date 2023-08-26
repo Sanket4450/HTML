@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+
+    <!-- JavaScript makes HTML pages more dynamic and interactive. -->
+
+</head>
+<body>
+
+    <h1>My First JavaScript</h1>
+
+    <p style="font-size: 150%;"><u>→ We can change any text using JavaScript.</u></p>
+
+    <button type="button" onclick="myFunction()">Click this!</button>
+
+    <p id="result">You are PASS!☺︎</p>
+
+    <script>
+        function myFunction(){
+            document.getElementById("result").innerHTML = "You are FAIL!☹︎";
+        }
+    </script>
+
+    <hr style="border: 1px solid black;">
+
+    <p style="font-size: 150%;"><u>→ We can change the style of an HTML element using JavaScript.</u></p>
+
+    <button type="button" onclick="myFunction1()">Click this!</button>
+
+    <p id="style">Hyper Text Markup Language</p>
+
+    <script>
+        function myFunction1(){
+            document.getElementById("style").style.color = "gold";
+            document.getElementById("style").style.fontSize = "25px";
+            document.getElementById("style").style.backgroundColor = "black";
+        }
+    </script>
+
+    <hr style="border: 1px solid black;">
+
+    <p style="font-size: 150%;"><u>→ We can change the value of src attribute of an image using JavaScript.</u></p>
+
+    <script>
+        function light(switch1){
+            var pic;
+            if(switch1 == 0){
+                pic = "pic_bulboff.gif"
+            } else {
+                pic = "pic_bulbon.gif"
+            }
+            document.getElementById('myImage').src = pic;
+        }
+    </script>
+
+    <img id="myImage" src="pic_bulboff.gif" width="110" height="180" style="padding-left: 14px;">
+
+    <p>
+    <button type="button" onclick="light(1)">Light On</button>
+    <button type="button" onclick="light(0)">Light Off</button>
+    </p>
+
+    <hr style="border: 1px solid black;">
+
+    <!-- <noscript> tag defines an alternate content to be displayed to users that have disabled scripts in their browser or have a browser that doesn't support scripts -->
+    
+        <p id="demo"></p>
+
+        <script>
+        document.getElementById("demo").innerHTML = "Hello JavaScript!";
+        </script>
+        
+        <noscript>Sorry, your browser does not support JavaScript!</noscript>
+        
+        <p style="font-size: 125%;">A browser without support for JavaScript will show the text written inside the noscript element.</p>
+
+</body>
+</html>

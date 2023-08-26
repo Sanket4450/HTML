@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Attributes & Elements</title>
+</head>
+<body>
+
+    <!-- html form attributes -->
+
+    <!-- action attribute defines the action to be performed when the form is submitted. -->
+    <!-- target attribute specifies where to display the response that is received after submitting the form. -->
+    <!-- method attribute specifies the HTTP method to be used when submitting the form data. -->
+    <!-- autocomplete attribute specifies whether a form should have autocomplete on or off. -->
+    <!-- novalidate attribute is a boolean attribute. -->
+
+    <form action="/action_page.php" target="_blank" method="get" autocomplete="on" novalidate>
+
+        <!-- html form elements -->
+        
+        <!-- <label> element defines a label for several form elements. -->
+        <!-- The for attribute of the <label> tag should be equal to the id attribute of the <input> element to bind them together. -->
+
+        <!-- <input> element can be displayed in several ways, depending on the type attribute. -->
+    
+        <label for="fname">First Name : </label><br>
+        <input type="text" id="fname" name="fname"><br><br>
+        <label for="lname">Last Name : </label><br>
+        <input type="text" id="lname" name="lname">
+
+        <!-- <select> element defines a drop-down list -->
+
+        <p>Select a food item you like the most :</p>
+
+        <label for="food">Choose a food item : </label>
+        <select name="food" id="food">
+            <option value="Panipuri">PaniPuri</option>
+            <option value="Manchurian" selected>Manchurian</option> <!-- by default, Manchurian selected -->
+            <option value="Pav-Bhaji">Pav-Bhaji</option>
+            <option value="Pizza">Pizza</option>
+            <option value="Burger">Burger</option>
+        </select><br><br>
+
+        <!-- size attribute to specify the number of visible values -->
+
+        <label for="city">Choose a city among this : </label>
+        <select name="city" id="city" size="3" multiple> <!-- we can select multiple values by adding the attribute-->
+            <option value="London">London</option>
+            <option value="Paris">Paris</option>
+            <option value="Tokyo">Tokyo</option>
+            <option value="New York">New York</option>
+            <option value="Los Angeles">Los Angeles</option>
+            <option value="Las Vegas">Las Vegas</option>
+        </select>
+
+        <!-- <textarea> element defines a multi-line input field (a text area) -->
+
+        <p>Describe the picture in fifty words : </p>
+
+        <textarea name="description" id="des" cols="45" rows="15">It is a picture of </textarea><br><br>
+
+        <!-- <button> element defines a clickable button -->
+
+        <button type="button" onclick="alert('Oops! Your device got hacked...')">Click Me!</button><br><br>
+
+        <!-- <fieldset> element is used to group related data in a form. -->
+        <!-- <legend> element defines a caption for the <fieldset> element. -->
+
+        <fieldset>
+            <legend>Personal Information :</legend>
+
+            <label for="fname">First Name : </label><br>
+            <input type="text" id="fname" name="fname"><br><br>
+            <label for="lname">Last Name : </label><br>
+            <input type="text" id="lname" name="lname">
+            <input type="submit" value="Submit">
+        </fieldset><br>
+
+        <!-- <datalist> element specifies a list of pre-defined options for an <input> element. -->
+
+        <p>Choose a specific player : </p>
+
+        <input list="players" name="players">
+        <datalist id="players">
+            <option value="Rohit Sharma"></option>
+            <option value="Virat Kohli"></option>
+            <option value="Hardik Pandya"></option>
+            <option value="M.S. Dhoni"></option>
+            <option value="Jasprit Bumrah"></option>
+            <option value="Ravindra Jadeja"></option>
+            <option value="Bhuvneshwar Kumar"></option>
+            <option value="Mohammed Shami"></option>
+            <option value="Yuzvendra Chahal"></option>
+        </datalist>
+    
+        <br><br><input type="submit" value="Submit">
+    
+    </form>
+    
+</body>
+</html>

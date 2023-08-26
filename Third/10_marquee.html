@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marquee</title>
+
+    <style>
+
+        .style {
+            background-color: rgb(15, 145, 70);
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 200%;
+            border-radius: 6px;
+            padding: 10px 20px;
+            margin: 0 10%;
+        }
+
+    </style>
+</head>
+<body>
+
+    <!-- Marquee HTML tag is a non-standard HTML element which is used to scroll a image or text
+    horizontally or vertically. -->
+
+    <h1>➜ Scroll Marquee</h1>
+
+    <marquee behavior="scroll" width="100%" bgcolor="pink">"A friend to all is a friend to none."</marquee>
+    
+    <!-- bgcolor attribute is now deprecated so we should use <style> for doing background color -->
+
+    <h1>➜ Slide Marquee</h1>
+
+    <marquee behavior="slide" width="100%" style="background-color: yellow;">
+        "The best way to predict your future is to create it." </marquee>
+
+    <h1>➜ Alternate Marquee</h1>
+
+    <marquee behavior="alternate" width="50%" style="background-color: aqua;">"A fool is known by his speech, and a wise man by silence."
+    </marquee>
+
+    <h1>➜ Direction in Marquee</h1>
+
+    <marquee behavior="scroll" direction="right" width="70%" style="background-color: darksalmon;">
+    “Who knows, doesn't say. Who speaks, doesn't know.”</marquee>
+
+    <h1>➜ All Styles in Marquee</h1>
+
+    <marquee class="style" behavior="alternate" scrollamount="25">"Never memorise something that you can look up."</marquee>
+    
+</body>
+</html>

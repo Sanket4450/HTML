@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ordered Lists</title>
+
+    <style>
+        ol {color: darkred; font-size: 200%;}
+    </style>
+</head>
+<body>
+
+    <!-- unordered list -->
+
+    <ol> <!-- The default list will be marked with numbers -->
+        <li>Sanket</li>
+        <li>Manav</li>
+        <li>Harshil</li>
+        <li>Parth</li>
+        <li>Poojan</li>
+    </ol>
+
+    <ol type="A"> <!-- The list items will be numbered with uppercase letters -->
+        <li>Sanket</li>
+        <li>Manav</li>
+        <li>Harshil</li>
+        <li>Parth</li>
+        <li>Poojan</li>
+    </ol>
+
+    <ol type="a"> <!-- The list items will be numbered with lowercase letters -->
+        <li>Sanket</li>
+        <li>Manav</li>
+        <li>Harshil</li>
+        <li>Parth</li>
+        <li>Poojan</li>
+    </ol>
+
+    <ol type="I"> <!-- The list items will be numbered with uppercase roman numbers -->
+        <li>Sanket</li>
+        <li>Manav</li>
+        <li>Harshil</li>
+        <li>Parth</li>
+        <li>Poojan</li>
+    </ol>
+
+    <!-- Nested ordered list -->
+
+    <ol>
+        <li>Mobile</li>
+        <li>laptop
+            <ol>
+                <li>MacBook</li>
+                <li>VivoBook</li>
+                <li>PrimeBook</li>
+            </ol>
+        </li>
+        <li>Tablet</li>
+        <li>Television
+            <ol>
+                <li>ONIDA</li>
+                <li>MI</li>
+                <li>Samsung</li>
+                <li>LG</li>
+            </ol>
+        </li>
+    </ol>
+
+    <!-- We can start list counting from any number by adding start attribute -->
+
+    <ol start="24">
+        <li>Apple</li>
+        <li>Samsung</li>
+        <li>OnePlus</li>
+        <li>Xiaomi</li>
+    </ol>
+</body>
+</html>

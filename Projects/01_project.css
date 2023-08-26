@@ -1,0 +1,637 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background-color: rgb(220, 229, 246);
+}
+
+.header {
+    background-color: rgb(18, 23, 32);
+    height: 60px;
+}
+
+img {
+    position: relative;
+    width: 100px;
+}
+
+.logo {
+    position: absolute;
+    top: 13px;
+    left: 25px;
+    cursor: pointer;
+}
+
+.subheader {
+    background: black;
+    border: none;
+    position: absolute;
+    top: 10px;
+    left: 200px;
+    display: inline;
+}
+
+.search {
+    width: 700px;
+    height: 40px;
+    font-size: 18px;
+    padding-left: 15px;
+    border-radius: 8px;
+}
+
+.button {
+    width: 40px;
+    height: 40px;
+    border-radius: 8px;
+    cursor: pointer;
+    background-color: rgb(255, 185, 55);
+}
+
+.search:focus {
+    outline: none;
+    border: 3px solid rgb(255, 166, 0);
+}
+
+.button:hover {
+    background-color: rgb(255, 166, 0);
+}
+
+.nav {
+    float: left;
+    background-color: rgb(39, 47, 63);
+    width: 100%;
+}
+
+.dropdown {
+    float: left;
+    overflow: hidden;
+}
+
+.dropdown .dropbtn {
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+}
+
+.nav a {
+    display: inline-block;
+    color: white;
+    font-family: Verdana, Tahoma, sans-serif;
+    font-size: 14px;
+    padding: 12px 14px;
+    text-decoration: none;
+}
+
+.nav a:hover,
+.dropbtn:hover {
+    border: 2px solid white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 100px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    width: 200px;
+}
+
+.dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.headtext {
+    display: inline;
+    color: white;
+    padding: 0 17px;
+    cursor: pointer;
+}
+
+.macbook1 {
+    clear: both;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    top: 20px;
+}
+
+.macbook1 > .new {
+    color: rgb(68, 0, 128);
+    font-family: Verdana, Tahoma, sans-serif;
+}
+
+.macbook1 > h1 {
+    font-size: 50px;
+    font-family: Verdana, Tahoma, sans-serif;
+    margin-top: 20px;
+}
+
+.macbook1 > .des {
+    font-size: 20px;
+    font-family: Verdana, Tahoma, sans-serif;
+    margin-top: -20px;
+}
+
+.macbook1 > img {
+    width: 650px;
+    margin-top: -10px;
+    cursor: pointer;
+}
+
+.list1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    position: relative;
+    top: 60px;
+    background-color: rgb(50, 10, 90);
+}
+
+.iphone, .samsung, .oneplus, .redmi {
+    margin: 25px 0;
+}
+
+.iphone > p, .samsung > p, .oneplus > p, .redmi > p {
+    text-align: left;
+    font-weight: bold;
+    font-size: 120%;
+    margin: 20px;
+    font-family: Verdana, Tahoma, sans-serif;
+}
+
+.iphone > .price, .samsung > .price, .oneplus > .price, .redmi > .price {
+    color: brown;
+}
+
+.list1 > .iphone, .list1 > .samsung, .list1 > .oneplus, .list1 > .redmi {
+    width: 332px;
+    height: 450px;
+    text-align: center;
+    background-color: white;
+}
+
+.iphone > img {
+    width: 216px;
+    cursor: pointer;
+}
+
+.samsung > img {
+    width: 265px;
+    margin-top: 3px;
+    cursor: pointer;
+}
+
+.oneplus > img {
+    width: 285px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+.redmi > img {
+    width: 210px;
+    margin-top: -3px;
+    cursor: pointer;
+}
+
+.list2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    position: relative;
+    top: 60px;
+    background-color: rgb(50, 10, 90);
+}
+
+.clothes > p, .footwear > p, .watches > p, .bags > p {
+    text-align: left;
+    font-weight: bold;
+    font-size: 120%;
+    margin: 20px;
+    font-family: Verdana, Tahoma, sans-serif;
+}
+
+.list2 > .clothes, .list2 > .footwear, .list2 > .watches, .list2 > .bags {
+    width: 332px;
+    height: 450px;
+    text-align: center;
+    margin-bottom: 25px;
+    background-color: white;
+}
+
+.clothes > img {
+    width: 255px;
+    cursor: pointer;
+}
+
+.footwear > img {
+    width: 255px;
+    cursor: pointer;
+}
+
+.watches > img {
+    width: 270px;
+    margin-top: -12px;
+    cursor: pointer;
+}
+
+.bags > img {
+    width: 310px;
+    margin-top: 15px;
+    cursor: pointer;
+}
+
+.deals1 {
+    background-color: #730526;
+    color: white;
+    font-size: 175%;
+    font-family: Verdana, Tahoma, sans-serif;
+    position: relative;
+    top: 60px;
+    margin: 0 0 10px;
+    padding: 15px 25px;
+    border: 5px solid white;
+    border-bottom: none;
+}
+
+.list3 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    position: relative;
+    top: 50px;
+    border: 5px solid white;
+    border-top: none;
+    background-color: #730526;
+}
+
+.list3 > .hp, .list3 > .vivo, .list3 > .watch, .list3 > .mixer, .list3 > .perfume {
+    width: 261px;
+    height: 400px;
+    text-align: center;
+    background-color: white;
+    margin-bottom: 25px;
+}
+
+.hp > img {
+    width: 255px;
+    cursor: pointer;
+}
+
+.vivo > img {
+    width: 255px;
+    cursor: pointer;
+}
+
+.watch > img {
+    width: 210px;
+    margin-top: 5px;
+    cursor: pointer;
+}
+
+.mixer > img {
+    width: 260px;
+    margin-top: 40px;
+    cursor: pointer;
+}
+
+.perfume > img {
+    width: 210px;
+    margin-top: 19px;
+    cursor: pointer;
+}
+
+.hp > p, .vivo > p, .watch > p, .mixer > p, .perfume > p {
+    color: rgb(208, 10, 32);
+    font-weight: bold;
+    text-align: left;
+    line-height: 27px;
+    padding: 15px;
+    font-family: Verdana, Tahoma, sans-serif;
+}
+
+.hp span, .vivo span, .watch span, .mixer span, .perfume span {
+    color: white;
+    padding: 5px;
+    border-radius: 2px;
+    background-color: rgb(208, 10, 32);
+}
+
+.hp > .price {
+    color: black;
+}
+
+.vivo > .price {
+    color: black;
+    margin-top: -1px;
+}
+
+.watch > .price {
+    color: black;
+    margin-top: -26px;
+}
+
+.mixer > .price {
+    color: black;
+    margin-top: -27px;
+}
+
+.perfume > .price {
+    color: black;
+    margin-top: -26px;
+}
+
+.deals2 {
+    background-color: white;
+    font-size: 150%;
+    font-family: Verdana, Tahoma, sans-serif;
+    position: relative;
+    top: 45px;
+    margin: 25px 20px 15px;
+    padding: 15px 20px;
+}
+
+.list4 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    position: relative;
+    top: 30px;
+    margin: 0 20px;
+    background-color: white;
+}
+
+.list4 > img {
+    width: 220px;
+    text-align: center;
+    background-color: white;
+    margin-bottom: 25px;
+    padding: 10px 5px;
+    cursor: pointer;
+}
+
+.deals3 {
+    background-color: white;
+    font-size: 150%;
+    font-family: Verdana, Tahoma, sans-serif;
+    position: relative;
+    top: 40px;
+    margin: 10px 20px;
+    padding: 20px 20px 10px;
+}
+
+.list5 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    position: relative;
+    top: 30px;
+    margin: 0 20px;
+    background-color: white;
+}
+
+.list5 > img {
+    width: 160px;
+    text-align: center;
+    background-color: white;
+    margin-bottom: 25px;
+    padding: 10px 5px;
+    cursor: pointer;
+}
+
+.deals4 {
+    background-color: white;
+    font-size: 125%;
+    font-family: Verdana, Tahoma, sans-serif;
+    position: relative;
+    top: 40px;
+    margin: 10px 20px;
+    padding: 20px 20px 10px;
+}
+
+.list6 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    position: relative;
+    top: 30px;
+    margin: 0 20px;
+    padding: 15px 0;
+    background-color: white;
+}
+
+.list6 > .box1 {
+    text-align: center;
+}
+
+.box1 > img {
+    width: 180px;
+    cursor: pointer;
+}
+
+.bo1x > p {
+    text-align: left;
+    font-size: 100%;
+    margin: 20px;
+    font-family: Verdana, Tahoma, sans-serif;
+}
+
+.box1 > .deal {
+    color: rgb(208, 10, 32);
+    font-weight: bold;
+    line-height: 27px;
+}
+
+.box1 span {
+    background-color: rgb(208, 10, 32);
+    color: white;
+    padding: 5px;
+    border-radius: 2px;
+}
+
+.box1 > .price {
+    font-size: 125%;
+}
+
+.box1 > .mrp {
+    font-size: 80%;
+}
+
+.ending {
+    position: relative;
+    top: 50px;
+    text-align: center;
+    font-family: Verdana, Tahoma, sans-serif;
+    padding: 20px 0;
+    margin: 10px;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+}
+
+.ending > .recommendations {
+    font-size: 90%;
+}
+
+.ending > .signin {
+    background-color: rgb(255, 204, 73);
+    font-weight: bold;
+    margin: 0 40%;
+    padding: 5px 0;
+    border: 1px solid rgb(226, 162, 0);
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.ending > .newcustomer {
+    font-size: 80%;
+}
+
+.newcustomer > a {
+    text-decoration: none;
+}
+
+.newcustomer > a:hover {
+    color: rgb(182, 36, 0);
+}
+
+.backtoTop {
+    display: block;
+    position: relative;
+    top: 60px;
+    color: white;
+    font-family: Verdana, Tahoma, sans-serif;
+    text-align: center;
+    font-size: 80%;
+    padding: 16px 0;
+    text-decoration: none;
+    background-color: rgb(54, 69, 86);
+}
+
+.backtoTop:hover {
+    background-color: rgb(68, 84, 103);
+}
+
+.footer1 {
+    display: flex;
+    position: relative;
+    top: 60px;
+    padding: 30px 250px;
+    justify-content: space-evenly;
+    background-color: rgb(36, 49, 64);
+}
+
+.box2 > p {
+    display: inline-block;
+    color: white;
+    font-size: 80%;
+    font-family: Verdana, Tahoma, sans-serif;
+    cursor: pointer;
+}
+
+.box2 > p:hover {
+    text-decoration: underline;
+}
+
+.box2 > .title {
+    color: white;
+    font-size: 100%;
+    font-weight: bold;
+    cursor: text;
+}
+
+.box2 > .title:hover {
+    text-decoration: none;
+}
+
+.footer2 {
+    position: relative;
+    top: 60px;
+    border-top: 1px solid rgb(60, 73, 90);
+}
+
+.countries1 {
+    display: flex;
+    justify-content: center;
+    background-color: rgb(36, 49, 64);
+}
+
+.countries2 {
+    display: flex;
+    justify-content: center;
+    background-color: rgb(36, 49, 64);
+}
+
+.countries1 > span, .countries2 > span {
+    color: white;
+    font-size: 70%;
+    font-family: Verdana, Tahoma, sans-serif;
+}
+
+.countries1 > span {
+    padding: 40px 8px 0;
+    cursor: pointer;
+}
+
+.countries1 > span:hover {
+    text-decoration: underline;
+}
+
+.countries2 > span {
+    padding: 7px 8px 40px;
+    cursor: pointer;
+}
+
+.countries2 > span:hover {
+    text-decoration: underline;
+}
+
+.footer3 {
+    position: relative;
+    top: 60px;
+    padding: 32px 0;
+    background-color: rgb(24, 30, 37);
+    color: white;
+    font-family: Verdana, Tahoma, sans-serif;
+    font-size: 70%;
+}
+
+.theEnd1 {
+    display: flex;
+    justify-content: center;
+}
+
+.theEnd1 > span {
+    padding: 0 8px 4px;
+    cursor: pointer;
+}
+
+.theEnd1 > span:hover {
+    text-decoration: underline;
+}
+
+.theEnd2 {
+    text-align: center;
+}

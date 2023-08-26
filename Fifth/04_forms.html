@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Input Attributes</title>
+</head>
+<body>
+
+    <form action="action_page.php">
+    
+    <!-- value attribute specifies an initial value for an input field -->
+
+    <fieldset>
+    <legend>Value Attribute</legend>
+
+    <label for="fname">First name:</label><br>
+    <input type="text" id="fname" name="fname" value="Cristiano"><br><br>
+
+    <label for="lname">Last name:</label><br>
+    <input type="text" id="lname" name="lname" value="Ronaldo">
+
+    </fieldset><br>
+
+    <!-- readonly attribute specifies that an input field is read-only. -->
+
+    <fieldset>
+        <legend>Readonly Attribute</legend>
+
+        <label for="fname">First name:</label><br>
+        <input type="text" id="fname" name="fname" value="Tony" readonly><br><br>
+
+        <label for="lname">Last name:</label><br>
+        <input type="text" id="lname" name="lname" value="Stark">
+
+    </fieldset><br>
+
+    <!-- disabled attribute specifies that an input field should be disabled. -->
+
+    <fieldset>
+        <legend>Disabled Attribute</legend>
+
+        <label for="fname">First name:</label><br>
+        <input type="text" id="fname" name="fname" value="Albert" disabled><br><br>
+
+        <label for="lname">Last name:</label><br>
+        <input type="text" id="lname" name="lname" value="Einstein">
+
+    </fieldset><br>
+
+    <!-- size attribute specifies the visible width, in characters, of an input field. -->
+    <!-- default value for size is 20. -->
+
+    <fieldset>
+        <legend>Size Attribute</legend>
+
+        <label for="name">Name:</label><br>
+        <input type="text" id="name" name="name" size="30"><br><br>
+
+        <label for="pin">PIN:</label><br>
+        <input type="text" id="pin" name="pin" size="4">
+
+    </fieldset><br>
+
+    <!-- maxlength attribute specifies the maximum number of characters allowed in an input field. -->
+
+    <fieldset>
+        <legend>Maxlength Attribute</legend>
+
+        <label for="name">Name:</label><br>
+        <input type="text" id="name" name="name" size="30"><br><br>
+
+        <label for="pin">PIN:</label><br>
+        <input type="text" id="pin" name="pin" size="4" maxlength="4">
+
+    </fieldset><br>
+
+    <!-- min and max attributes specify the minimum and maximum values for an input field. -->
+
+    <fieldset>
+        <legend>Min and Max Attributes</legend>
+
+        <label for="datemax">Enter a date before 1980-01-01:</label>
+        <input type="date" id="datemax" name="datemax" max="1979-12-31"><br><br>
+        
+        <label for="datemin">Enter a date after 2000-01-01:</label>
+        <input type="date" id="datemin" name="datemin" min="2000-01-02"><br><br>
+        
+        <label for="quantity">Quantity (between 1 and 5):</label>
+        <input type="number" id="quantity" name="quantity" min="1" max="5">
+
+    </fieldset><br>
+
+    <!-- multiple attribute specifies that the user is allowed to enter more than one value in an input field. -->
+
+    <fieldset>
+        <legend>Multiple Attribute</legend>
+
+        <label for="files">Select files:</label>
+        <input type="file" id="files" name="files" multiple>
+
+    </fieldset><br>
+
+    <!-- pattern attribute specifies a regular expression that the input field's value is checked against, when the form is
+    submitted. -->
+
+    <fieldset>
+        <legend>Pattern Attribute</legend>
+
+        <label for="country_code">Country code:</label>
+        <input type="text" id="country_code" name="country_code" pattern="[A-Za-z]{3}" title="Three letter country code">
+        <input type="submit" value="Submit">
+
+    </fieldset><br>
+
+    <!-- placeholder attribute specifies a short hint that describes the expected value of an input field (a sample value or a
+    short description of the expected format). -->
+
+    <fieldset>
+        <legend>Placeholder Attribute</legend>
+
+        <label for="phone">Enter a phone number:</label>
+        <input type="tel" id="phone" name="phone" placeholder="123-45-678" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}">
+        <input type="submit" value="Submit">
+
+    </fieldset><br>
+
+    <!-- required attribute specifies that an input field must be filled out before submitting the form. -->
+
+    <fieldset>
+        <legend>Required Attribute</legend>
+
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required>
+        <input type="submit" value="Submit">
+
+    </fieldset><br>
+
+    <!-- step attribute specifies the legal number intervals for an input field. -->
+
+    <fieldset>
+        <legend>Step Attribute</legend>
+
+        <label for="points">Points:</label>
+        <input type="number" id="points" name="points" step="3">
+
+    </fieldset><br>
+
+    <!-- autofocus attribute specifies that an input field should automatically get focus when the page loads. -->
+
+    <fieldset>
+        <legend>Autofocus Attribute</legend>
+
+        <label for="fname">First Name:</label><br>
+        <input type="text" id="fname" name="fname"><br>
+        <label for="mname">Middle Name:</label><br>
+        <input type="text" id="mname" name="mname" autofocus><br>
+        <label for="lname">Last Name:</label><br>
+        <input type="text" id="lname" name="lname">
+
+    </fieldset><br>
+
+    <!-- height and width attributes specify the height and width of an <input type="image"> element. -->
+
+    <fieldset>
+        <legend>Height and Width Attributes</legend>
+
+        <label for="fname">First name:</label>
+        <input type="text" id="fname" name="fname"><br><br>
+
+        <label for="lname">Last name:</label>
+        <input type="text" id="lname" name="lname"><br><br>
+
+        <input type="image" src="/Images/IMG_1.jpg" alt="Submit" width="40" height="55">
+
+    </fieldset><br>
+
+    <!-- list attribute refers to a <datalist> element that contains pre-defined options for an <input> element. -->
+
+    <fieldset>
+        <legend>List Attribute</legend>
+
+        <input list="mobiles">
+        <datalist id="mobiles">
+            <option value="Apple">
+            <option value="Samsung">
+            <option value="OnePlus">
+            <option value="Vivo">
+            <option value="Oppo">
+        </datalist>
+        </form>
+
+    </fieldset><br>
+
+    <!-- autocomplete attribute specifies whether a form or an input field should have autocomplete on or off. -->
+
+    <fieldset>
+        <legend>Autocomplete Attribute</legend>
+
+        <label for="email">E-mail:</label>
+        <input type="email" id="email" name="email" autocomplete="on"><br><br>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" autocomplete="off">
+
+    </fieldset><br>
+
+    </form>
+
+</body>
+</html>

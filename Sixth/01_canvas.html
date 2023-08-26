@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Canvas Graphics</title>
+</head>
+<body>
+
+    <!-- <canvas> element is used to draw graphics on a web page. -->
+
+    <canvas id="myCanvas1" width="300" height="180" style="border: 2px solid black;"></canvas><br>
+
+    <canvas id="myCanvas2" width="300" height="180" style="border: 2px solid black;"></canvas><br>
+
+    <canvas id="myCanvas3" width="300" height="180" style="border: 2px solid black;"></canvas><br>
+
+    <canvas id="myCanvas4" width="300" height="180" style="border: 2px solid black;"></canvas><br>
+
+    <canvas id="myCanvas5" width="300" height="180" style="border: 2px solid black;"></canvas><br>
+
+    <!-- After creating the rectangular canvas area, you must add a JavaScript to do the drawing. -->
+
+    <script>
+
+        // Draw a Line
+
+        var a = document.getElementById("myCanvas1");
+        var ctx1 = a.getContext("2d");
+        ctx1.moveTo(0, 0);
+        ctx1.lineTo(300, 180);
+        ctx1.stroke();
+
+        // Draw a Circle
+
+        var b = document.getElementById("myCanvas2");
+        var ctx2 = b.getContext("2d");
+        ctx2.beginPath();
+        ctx2.arc(150, 90, 80, 0, 2 * Math.PI);
+        ctx2.stroke();
+
+        // Draw a Fill Text
+
+        var c = document.getElementById("myCanvas3");
+        var ctx3 = c.getContext("2d");
+        ctx3.font = "50px Arial";
+        ctx3.fillText("Hello World!", 15, 70);
+
+        // Draw a Stroke Text
+
+        var d = document.getElementById("myCanvas3");
+        var ctx4 = d.getContext("2d");
+        ctx4.font = "50px Arial";
+        ctx4.strokeText("Hello World!", 15, 140);
+
+        // Draw Linear Gradient
+
+        var e = document.getElementById("myCanvas4");
+        var ctx5 = e.getContext("2d");
+
+            // Create gradient
+            var grd = ctx5.createLinearGradient(0, 0, 280, 0);
+            grd.addColorStop(0, "red");
+            grd.addColorStop(1, "white");
+
+            // Fill with gradient
+            ctx5.fillStyle = grd;
+            ctx5.fillRect(10, 10, 280, 160);
+
+        // Draw Circular Gradient
+
+        var f = document.getElementById("myCanvas5");
+        var ctx6 = f.getContext("2d");
+
+            // Create gradient
+            var grd = ctx6.createRadialGradient(150, 90, 10, 150, 90, 160);
+            grd.addColorStop(0, "red");
+            grd.addColorStop(1, "white");
+
+            // Fill with gradient
+            ctx6.fillStyle = grd;
+            ctx6.fillRect(10, 10, 280, 160);
+
+    </script>
+    
+</body>
+</html>

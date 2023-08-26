@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS</title>
+
+    <!-- internal CSS (by using a <style> element in the <head> section) -->
+
+    <style>
+
+        body {background-color: mediumspringgreen;}
+        h1 {background-color: antiquewhite;}
+
+        p {
+            color: darkblue;  /* inline CSS priority first */
+            font-size: 200%;
+            font-family: Courier;
+        }
+
+        h1 {
+            font-size: 200%;
+            font-family: Courier;
+        }
+
+    </style>
+
+    <!-- external CSS (by using a <link> element to link to an external CSS file) -->
+
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- priority = inline > external > internal -->
+
+</head>
+<body>
+
+    <!-- inline CSS (by using the <style> attribute) -->
+
+    <h1 style="color: red;">Sanket Talaviya</h1>
+    <p style="color: blue;">I am learning how to use CSS in an HTML file.</p>
+
+    <h1>ABCDEFG</h1>
+    <h1>HIJKLMN</h1>
+    <h1>OPQRSTU</h1>
+    <h1>VWXYZ</h1>
+    
+</body>
+</html>
